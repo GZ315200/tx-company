@@ -10,7 +10,7 @@ export default function SignIn() {
     <>
       <>
         <div className="mb-10">
-          <h1 className="text-4xl font-bold">Sign in to your account</h1>
+          <h1 className="text-4xl font-bold">账号密码登录</h1>
         </div>
         {/* Form */}
         <form>
@@ -20,7 +20,7 @@ export default function SignIn() {
                 className="mb-1 block text-sm font-medium text-gray-700"
                 htmlFor="email"
               >
-                Email
+                手机号
               </label>
               <input
                 id="email"
@@ -35,7 +35,7 @@ export default function SignIn() {
                 className="mb-1 block text-sm font-medium text-gray-700"
                 htmlFor="password"
               >
-                Password
+                密码
               </label>
               <input
                 id="password"
@@ -49,7 +49,7 @@ export default function SignIn() {
           </div>
           <div className="mt-6">
             <button className="btn w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
-              Sign In
+              登陆
             </button>
           </div>
         </form>
@@ -59,7 +59,7 @@ export default function SignIn() {
             className="text-sm text-gray-700 underline hover:no-underline"
             href="/reset-password"
           >
-            Forgot password
+            忘记密码？
           </Link>
         </div>
       </>

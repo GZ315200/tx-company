@@ -14,11 +14,16 @@ export default function Header() {
           {/* Desktop sign in links */}
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
+              <h1 className=" font-bold text-2xl mr-1">
+              宁夏泓博数字科技有限公司
+              </h1>
+            </li>
+            {/* <li>
               <Link
                 href="/signin"
                 className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
               >
-                Login
+                登录
               </Link>
             </li>
             <li>
@@ -28,7 +33,7 @@ export default function Header() {
               >
                 Register
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

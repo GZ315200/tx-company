@@ -1,11 +1,8 @@
 import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
+import bannber from "@/public/images/banner.png";
+
+import bannber02 from "@/public/images/banner02.jpg";
 
 export default function HeroHome() {
   return (
@@ -20,7 +17,7 @@ export default function HeroHome() {
               className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]"
               data-aos="zoom-y-out"
             >
-              <div className="-mx-0.5 flex justify-center -space-x-3">
+              {/* <div className="-mx-0.5 flex justify-center -space-x-3">
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={Avatar01}
@@ -63,24 +60,24 @@ export default function HeroHome() {
                   height={32}
                   alt="Avatar 05"
                 />
-              </div>
+              </div> */}
             </div>
             <h1
               className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              The website builder you're <br className="max-lg:hidden" />
-              looking for
+            深化高等教育产教融合
+            <br className="max-lg:hidden" />
+            促进校企协同创新
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
-                className="mb-8 text-lg text-gray-700"
+                className="mb-8 text-lg text-gray-500"
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
+                产教融合既是产业转型升级的通道，也是教育形态变革的路径。深化产教融合促进教育链、人才链与产业链、创新链有机衔接，是当前推进人力资源供给侧结构性改革的迫切要求。幸福产业，也就是精神文化产业，与国家十七届五中全会提出的发展一文化产 业的战略相一致，涉及生活的方方面面。幸福产业的意义在于累积幸福感受提升居民幸福感，是构建和谐社会的重要经济手段之一。是构建和谐社 会的重要经济手段之一。
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -88,7 +85,7 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
-                  <a
+                  {/* <a
                     className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                     href="#0"
                   >
@@ -104,48 +101,34 @@ export default function HeroHome() {
                     href="#0"
                   >
                     Learn More
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
           </div>
           {/* Hero image */}
           <div
-            className="mx-auto max-w-3xl"
+            className="mx-auto max-w-3xl flex flex-col justify-between "
             data-aos="zoom-y-out"
-            data-aos-delay={600}
+            data-aos-delay={500}
           >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  cruip.com
-                </span>
-              </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span>
-                <br />
-                <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
-                </span>
-                <br />
-                <span className="animate-[code-6_10s_infinite]">
-                  Package published.
-                </span>
-              </div>
-            </div>
+            <Image  
+                  className="rounded bg-gray-900 mb-12"
+                  src={bannber02}
+                  width={1600}
+                  height={800}
+                  alt="Planet">
+
+                </Image>
+             <Image  
+                  className="rounded bg-gray-900"
+                  src={bannber}
+                  width={1600}
+                  height={800}
+                  alt="Planet">
+
+                </Image>
+                
           </div>
         </div>
       </div>
