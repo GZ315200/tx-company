@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Home - Simple",
+  title: "主页",
   description: "Page description",
 };
 
